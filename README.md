@@ -81,7 +81,7 @@ Go to any of you components and write the following:
 
 ```html
 <button
-  class="py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-400">Hello</button>
+  class="py-2 px-4 border border-transparent text-sm rounded-md text-white bg-red-400">Hello</button>
 ```
 
 
@@ -94,6 +94,8 @@ Now run `ng serve`, you should see the following button
 If we don't purge, our CSS can be very heavy due to all the CSS classes TailwindCSS adds for you. If you purge, all the unused classes will be removed.
 
 The way I figured to do purging in Angular 11.2.0 are the following ways:
+
+**Note: In newer versions of Tailwind, the purgin happens autimatically when you run `ng prod` so you can skip these steps.**
 
 A)  This is my preferred way. Add this to your building SCRIPT `NODE_ENV=production ng build --prod`
 and your tailwind.config.js file should look like this.
@@ -129,8 +131,9 @@ Then you can run `ng build --prod` and you will see your bundle since getting sm
 ![purging tailwind](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jemgahtbi11mwfbkdfyu.png)
 
 
-<h2>To learn more about Angular and TailwindCSS</h2>
-https://dev.to/angular/setup-tailwindcss-in-angular-the-easy-way-1i5l
+<h2>How-To Guide</h2>
+
+Follow [this](https://dev.to/angular/setup-tailwindcss-in-angular-the-easy-way-1i5l) step by step guide to integrate TailwindCSS into your Angular project.
 
 ## PayPal Developer Community
 
