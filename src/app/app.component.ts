@@ -6,5 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-tailwind';
+  products = [
+    {
+      name: "Bad Bunny",
+      price: 100,
+      img: "bb.png"
+    },
+    {
+      name: "JBalvin",
+      price:200,
+      img: "jbv.png"
+    },
+    {
+      name: "Nicky Jam",
+      price: 300,
+      img: "jb.png"
+    },
+    {
+      name: "Ozuna",
+      price: 400,
+      img: "oz.png"
+    }
+  ]
 }
